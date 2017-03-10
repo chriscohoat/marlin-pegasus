@@ -1,11 +1,11 @@
 #include "mesh_bed_leveling.h"
 
-#ifdef MESH_BED_LEVELING
+#if ENABLED(MESH_BED_LEVELING)
 
   mesh_bed_leveling mbl;
 
   mesh_bed_leveling::mesh_bed_leveling() { reset(); }
-      
+
   void mesh_bed_leveling::reset() {
     active = 0;
     for (int y = 0; y < MESH_NUM_Y_POINTS; y++)
