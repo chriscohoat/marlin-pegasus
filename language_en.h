@@ -298,13 +298,13 @@
   #define MSG_CONTRAST                        "LCD contrast"
 #endif
 #ifndef MSG_STORE_EPROM
-  #define MSG_STORE_EPROM                     "Store memory"
+  #define MSG_STORE_EPROM                     "Store memory (M500)"
 #endif
 #ifndef MSG_LOAD_EPROM
   #define MSG_LOAD_EPROM                      "Load memory"
 #endif
 #ifndef MSG_RESTORE_FAILSAFE
-  #define MSG_RESTORE_FAILSAFE                "Restore failsafe"
+  #define MSG_RESTORE_FAILSAFE                "Restore failsafe (M502)"
 #endif
 #ifndef MSG_REFRESH
   #define MSG_REFRESH                         "Refresh"

@@ -50,7 +50,7 @@ Here are some standard links for getting your machine calibrated:
 #define STRING_CONFIG_H_AUTHOR "Cohoat's Printer" // Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
-#define STRING_SPLASH_LINE2 "v1.1.0-RC3_12"
+#define STRING_SPLASH_LINE2 ""
 //#define STRING_SPLASH_LINE2 STRING_DISTRIBUTION_DATE // will be shown during bootup in line 2
 
 // @section machine
@@ -428,7 +428,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 300
+#define X_MAX_POS 250
 #define Y_MAX_POS 300
 #define Z_MAX_POS 300
 
@@ -617,7 +617,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.19,80.19,4000,90}  // default steps per unit for Ultimaker
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.19,80.19,400,90}  // default steps per unit for Ultimaker. 400 was default Z but with the new lead screws 304 is precise /CC
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 2, 50}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {3000,3000,5,3000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
